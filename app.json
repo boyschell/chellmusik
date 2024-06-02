@@ -1,0 +1,86 @@
+{
+    "name": "Nezuko Music",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph//file/6be6db8050a16fe945184.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "25639252",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "42db0fd56c51ff2b94cf064838eba7c1",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "False",
+        "required": false
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "6858482597:AAGXiRVjATRjRkkjGJfLnYdId2tAv2XNuqQ",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Nezuko database for you.",
+        "value": "mongodb+srv://telegram99:XwNnMxu2XypHRPFN@cluster0.17ljndm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "BQGHOVQAj9uMH4bEvMW6nRtVZIx8Eb8aj13ffTmgJ8Qf4FtJciQ7FEPK9dfUHj2zpwnv8Jrrsjk4RYRcOFj1jPdsOgtrEIBoZavmhW04wROiFS5NtsRqKg3MeyDvnF9ghhR1iR-SJLP4K4YigXgYOOKc0Vpwep5C_FVIYAOGGqj8Nu9Jrqe1xyZirsvu_saXfuJQan_Y9ShsFNBWSHwHwDMkP6WC-7P08VpyJf2edvjNEIwXDNsxBNOCCmVp877_iVGfW65_dE8WDoU47Uy9qlzCmWVHvCiQDQY_3WnmzLmQ0g3LIbhS9TKRahNNRCobVsr-vEjNXBxXkzN_iTVrtqPrHT8xKQAAAAGjVyt1AA",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app/bot's name",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "-1002070417836",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/Kucingyugh/Musickucing",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
