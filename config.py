@@ -8,19 +8,19 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "25639252"))
-API_HASH = getenv("API_HASH", "42db0fd56c51ff2b94cf064838eba7c1")
+API_ID = int(getenv("API_ID", "27608729"))
+API_HASH = getenv("API_HASH", "cffd30262a3ad66a29d49938e4ba3464")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "7025210522:AAHNMSkZ7hJkMZb_jeSu-Y_DC2P3g5ebkTc")
+BOT_TOKEN = getenv("BOT_TOKEN", "7172781216:AAGvRpr_Ju8PkMjwD1teZa0CaeRCgr6qH08")
 
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME", "ogeblu")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "boys_chellx")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "arthursim_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "chellantigikesbot")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://floshhh80:0U2yeziwwEIwaIIL@cluster0.utamtqb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://chellmusic:chell1234@cluster0.rqywhuq.mongodb.net/chellmusic?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -36,11 +36,11 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001888782758"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Arthur Simpson")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "chellantigikes")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1735180969").split())
+    map(int, getenv("OWNER_ID", "5272203652").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -61,9 +61,9 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/gabutan07")
+    "SUPPORT_CHANNEL", "https://t.me/mmk_store")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/jaaxkucsupport")
+    "SUPPORT_GROUP", "https://t.me/chellsupportbot")
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
